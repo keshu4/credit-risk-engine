@@ -218,3 +218,26 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# ---------- Project-specific ----------
+# Datasets: re-downloadable, often licensed against redistribution, too big for git
+/data/
+# Trained model artefacts: large binaries, published to Hugging Face instead
+/models/
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.onnx
+*.joblib
+*.pkl
+# Experiment-tracking output
+/mlruns/
+/wandb/
+/lightning_logs/
+# Credentials: never commit
+kaggle.json
+.env.*
+!.env.example
+# macOS Finder metadata
+.DS_Store
